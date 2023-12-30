@@ -1,0 +1,77 @@
+/* blue palette
+light blue (inner): #bbeaff
+other light blue (other inner): #98ddfc
+less lighter (left side): #72d3fe
+neon blue (rigth side): #1F51FF
+ */
+
+
+/* frog palette
+light green (inner): #7cbb62
+other light green (other inner): #9bc262
+brown (left side): #baa56f
+dark green (right side): #477455
+*/
+
+@import "home.css";
+
+.frog body{
+    background-color: #7cbb62;
+}
+
+.frog .center-top-bar {
+    background: linear-gradient(454deg, #baa56f, #477455);
+}
+
+.frog .center-bottom-bar {
+    background: linear-gradient(454deg, #baa56f, #477455);
+}
+
+.frog .left-bar {
+    background-color: #baa56f;
+}
+
+.frog .right-bar {
+    background-color: #477455;
+}
+
+.frog .navbar {
+    background-color: #7cbb62;
+}
+
+.frog .navbar li a:hover {
+    color: 	#477455;
+}
+
+.frog .pages {
+    background-color: #7cbb62;
+}
+
+.frog .home {
+    background-color: #7cbb62;
+}
+
+.frog .about {
+    background-color: #7cbb62;
+}
+
+.frog .contact {
+    background-color: #9bc262;
+}
+
+.frog .projects {
+    background-color: #7cbb62;
+}
+
+.frog .socials li a:hover {
+    color: 	#477455;
+}
+
+.frog .about {
+    background-color: #9bc262;
+}
+
+.frog input[type=submit] {
+    background-color: #477455;
+  }
+

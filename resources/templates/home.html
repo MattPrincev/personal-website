@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/home.css">
+        <link rel="stylesheet" type="text/css" href="../css/frog.css">
+        <script defer type="text/javascript" src="../js/main.js"></script>     
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Signika+Negative&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- bars -->
+        <div class="left-bar"></div>
+        <div class="center-top-bar"></div>
+        <div class="center-bottom-bar"></div>
+        <div class="right-bar"></div>
+        <!-- navbar -->
+        <div class="navbar">
+            <ul>
+                <li id="language">
+                    <div class="dropdown">
+                        <button class="dropbtn">Language 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a onclick="toggle_language('english')">English</a>
+                          <a onclick="toggle_language('spanish')">Español</a>
+                          <a onclick="toggle_language('japanese')">日本語</a>
+                        </div>
+                    </div> 
+                </li>
+                <!-- onclick="toggle_style()" -->
+                <li><a><img id="forg" src="../images/forg-off.png" alt="forg" style="width: 80%;" onclick="toggle_style()"></a></li>
+                <li><a id="contact" href="#contact" onclick="scroll_to('contact')">Contact</a></li>
+                <li><a id="projects"　href="#projects" onclick="scroll_to('projects')">Projects</a></li>
+                <li><a id="about"　href="#about" onclick="scroll_to('about')">About</a></li>
+                <li><a id="home"　class="active" href="#home" onclick="scroll_to('home')">Home</a></li>
+                <!-- <li><a><img id="icon" src="../images/running-kot.gif" alt="kot" style="width: 40%;"></a></li> -->
+                <li><a><img class="awake" id="koshka" src="../images/running-kot.gif" alt="kot" onclick="cat_toggle()"></a></li>
+            </ul>
+        </div>
+        <div class="full-container">
+            <!-- home -->
+            <div class="pages home">
+                <div class="intro-row">
+                    <div class="intro-col">
+                        <h1 class="greeting">Howdy! I'm Matt Princev</h1>
+                        <p class="me">I'm a software developer based in Minnesota <span id="mrs">ฅ^•ﻌ•^ฅ</span></p>
+                        <div class="socials">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/matt-princev-2a856a1a6/">LI</a></li>
+                                <li><a href="https://github.com/">GH</a></li>
+                                <li><a href="https://www.instagram.com/mattprincev/">IG</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img class="doggo" src="../images/ratt.jpg" alt="hardaf" style="width: 20%;"> 
+                </div>
+            </div>
+            <!-- about -->
+            <div class="pages about">
+                <div class="about-parent">
+                    <div class="page-start">
+                        <h2 id="about-me">About Me</h2>
+                        <p id="about-me-p">Here, you'll discover additional details about me, what I like to do, and my skills related to programming and technology</p>
+                    </div>
+                    <div class="about-container">
+                        <div class="about-left">
+                            <h3 id="know-me">Get to know me!</h3>
+                            <p id="know-p1">I've recently completed a Bachelor's degree in Computer Science at the University of Minnesota, aspiring to become a proficient developer, 
+                                capable and enthusiastic about working on both the front end and back end of applications.</p>
+                            <p id="know-p2">Through my academic journey and practical involvement in software development, I've acquired a robust
+                                set of skills and a deep understanding of the intricacies involved in creating functional and innovative solutions. 
+                                This blend of theoretical knowledge and real-world application has equipped me with the adaptability, problem-solving abilities, 
+                                and technical proficiency required for success in software development roles.</p>
+                            <p id="know-p3">I'm open to job oppurtunities where I can make meaningful contributions, continue learning, and grow as a person. 
+                                If there's a suitable opportunity that aligns with my skills and experience, feel free to reach out by contacting me through
+                                my <b>contact</b> page.</p>
+                        </div>
+                        <div class="about-right">
+                            <h3>My skills</h3>
+                            <div class="skill-container">
+                                <div class="skill-1">
+                                    <div class="skill"><p>HTML/Pug</p></div>
+                                    <div class="skill"><p>CSS</p></div>
+                                    <div class="skill"><p>Javascript</p></div>
+                                    <div class="skill"><p>Python</p></div>
+                                </div>
+                                <div class="skill-2">
+                                    <div class="skill"><p>ExpressJS</p></div>
+                                    <div class="skill"><p>MySQL</p></div>
+                                    <div class="skill"><p>GitHub</p></div>
+                                    <div class="skill"><p>Terminal</p></div>
+                                </div>
+                                <div class="skill-3">
+                                    <div class="skill" ><p id="spanish">Spanish (Fluent)</p></div>
+                                    <div class="skill" ><p id="japanese">Japanese (Intermediate)</p></div>
+                                </div>
+                                <div class="skill-3">
+                                    <div class="skill" ><p id="russian">Russian (Beginner)</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- projects -->
+            <div class="pages projects">
+                <div class="project-parent">
+                    <div class="page-start">
+                        <h2 id="project-h2">Projects</h2>
+                        <p id="project-p">Here are a couple of my favorite projects</p>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-1">
+                            <div class="project-img"><img class="bowling-img" src="../images/bowling.png" alt="bowling"></div>
+                            <div class="project-text">
+                                <h3 id="bowling-h3">VR Bowling Simulator</h3>
+                                <p id="bowling-p">This project, created with Godot, offers users an immersive bowling experience in VR. 
+                                    Notably, it introduces a unique feature allowing players to adjust the weight and size of the bowling ball, enhancing the realism and customization 
+                                    within the simulation. Additionally, it includes the unique feature of launching balls at distances beyond what is achievable in real life.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project-2">
+                            <div class="project-img"><img class="blog-img" src="../images/microblogging.png" alt="blog"></div>
+                            <div class="project-text">
+                                <h3 id="blog-h3">Microblogging Platform</h3>
+                                <p id="blog-p">I developed a microblogging website as part of a class project and expanded upon it afterward. 
+                                    This expansion included features such as a liking system, profile customization, 
+                                    the ability to post, delete one's own posts, edit posts, and much more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- contact -->
+            <div class="pages contact">
+                <div class="contact-parent">
+                    <div class="page-start">
+                        <h2 id="contact-h2">Contact</h2>
+                        <p id="contact-p">Please don't hesitate to reach out by filling out the form below, and I'll get back to you as soon as possible!</p>
+                    </div>
+                    <div class="contact-container">
+                        <!-- /action_page.php was belowe -->
+                        <form action="https://formsubmit.co/mattprincev1@gmail.com.com" method="POST">
+                            <label for="name" id="name-label">Name</label>
+                            <input type="text" id="name-input" name="name" placeholder="Enter your name" minlength="1">
+                        
+                            <label for="email" id="email-label">Email</label>
+                            <input type="email" id="email-input" name="email" placeholder="Enter your email">
+                        
+                            <label for="message" id="message-label">Message</label>
+                            <textarea id="message-input" name="message" placeholder="Enter your message here 〵(^ o ^)〴" style="height:200px" minlength="1" maxlength="320"></textarea>
+                        
+                            <input type="hidden" name="_subject" value="New submission!">
+
+                            <input type="submit" value="Submit" id="submit">
+                        </form>
+                        <!-- 
+                            <form action="https://formsubmit.co/your@email.com" method="POST">
+                                <input type="text" name="name" required>
+                                <input type="email" name="email" required>
+                                <button type="submit">Send</button>
+                            </form> 
+                        https://formsubmit.co/ 
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
