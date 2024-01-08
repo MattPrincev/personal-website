@@ -133,7 +133,7 @@ function toggle_english(){
 
     // home page
     greeting = document.getElementsByClassName("greeting")
-    greeting[0].innerHTML = "Howdy! I'm Matt Princev"
+    greeting[0].innerHTML = "Hello! I'm Matt Princev"
     me = document.getElementsByClassName("me")
     me[0].innerHTML = "I'm a software developer based in Minnesota <span id='mrs'> ฅ^•ﻌ•^ฅ </span>"
 
