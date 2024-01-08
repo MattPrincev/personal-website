@@ -9,12 +9,12 @@ function initial_check() {
     if(localStorage.getItem("theme") == "frog"){
         localStorage.setItem("theme", "frog");
         bod.classList.toggle("frog");
-        forg.src = "../images/forg-on.png"
+        forg.src = "resources/images/forg-on.png"
         mrs.innerHTML = "(⚈₋₍⚈)"
     }
     else{
         localStorage.setItem("theme", "blue");
-        forg.src = "../images/forg-off.png"
+        forg.src = "resources/images/forg-off.png"
         mrs.innerHTML = "ฅ^•ﻌ•^ฅ<"
     }
  }
@@ -26,13 +26,13 @@ function toggle_style() {
     if(localStorage.getItem("theme") == "frog"){
         bod.classList.toggle("frog");
         localStorage.setItem("theme", "blue");
-        forg.src = "../images/forg-off.png"
+        forg.src = "resources/images/forg-off.png" 
         mrs.innerHTML = "ฅ^•ﻌ•^ฅ<"
     }
     else{
         bod.classList.toggle("frog");
         localStorage.setItem("theme", "frog");
-        forg.src = "../images/forg-on.png"
+        forg.src = "resources/images/forg-on.png"
         mrs.innerHTML = "(⚈₋₍⚈)"
     }
  }
@@ -44,11 +44,11 @@ function initial_cat(){
     var cat = document.getElementById("koshka")
     if(localStorage.getItem("status") == "awake"){
         localStorage.setItem("status", "awake")
-        cat.src = "../images/running-kot.gif"
+        cat.src = "resources/images/running-kot.gif"
     }
     else{
         localStorage.setItem("status", "asleep")
-        cat.src = "../images/nRq.gif"
+        cat.src = "resources/images/nRq.gif"
         cat.classList.toggle("asleep");
         cat.classList.toggle("awake");
     }
@@ -58,13 +58,13 @@ function cat_toggle(){
     var cat = document.getElementById("koshka")
     if(localStorage.getItem("status") == "awake"){
         localStorage.setItem("status", "asleep")
-        cat.src = "../images/nRq.gif"
+        cat.src = "resources/images/nRq.gif"
         cat.classList.toggle("asleep");
         cat.classList.toggle("awake");
 }
     else{
         localStorage.setItem("status", "awake")
-        cat.src = "../images/running-kot.gif"
+        cat.src = "resources/images/running-kot.gif"
         cat.classList.toggle("asleep");
         cat.classList.toggle("awake");
     }
