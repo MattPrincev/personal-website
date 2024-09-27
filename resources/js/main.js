@@ -135,7 +135,7 @@ function toggle_english(){
     greeting = document.getElementsByClassName("greeting")
     greeting[0].innerHTML = "Hello! I'm Matt Princev"
     me = document.getElementsByClassName("me")
-    me[0].innerHTML = "I'm a software developer based in Minnesota <span id='mrs'> ฅ^•ﻌ•^ฅ </span>"
+    me[0].innerHTML = "I'm a Software Engineer based in Minnesota <span id='mrs'> ฅ^•ﻌ•^ฅ </span>"
 
     // about me
     about_me = document.getElementById("about-me")
@@ -145,7 +145,7 @@ function toggle_english(){
     know_me = document.getElementById("know-me")
     know_me.innerHTML = "Get to know me!"
     know_p1 = document.getElementById("know-p1")
-    know_p1.innerHTML = "I've recently completed a Bachelor's degree in Computer Science at the University of Minnesota, aspiring to become a proficient developer, capable and enthusiastic about working on both the front end and back end of applications."
+    know_p1.innerHTML = "I've recently completed a Bachelor's degree in Computer Science at the University of Minnesota, currently working as a Graduate Software Engineer at Rhize, capable and enthusiastic about working on both the front end and back end of applications."
     know_p2 = document.getElementById("know-p2")
     know_p2.innerHTML = "Through my academic journey and practical involvement in software development, I've acquired a robust set of skills and a deep understanding of the intricacies involved in creating functional and innovative solutions. This blend of theoretical knowledge and real-world application has equipped me with the adaptability, problem-solving abilities, and technical proficiency required for success in software development roles."
     know_p3 = document.getElementById("know-p3")
