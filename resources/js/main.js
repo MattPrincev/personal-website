@@ -135,7 +135,7 @@ function toggle_english(){
     greeting = document.getElementsByClassName("greeting")
     greeting[0].innerHTML = "Hello! I'm Matt Princev"
     me = document.getElementsByClassName("me")
-    me[0].innerHTML = "I'm a Software Engineer based in Minnesota <span id='mrs'> ฅ^•ﻌ•^ฅ </span>"
+    me[0].innerHTML = "I'm a Graduate Software Engineer based in Minnesota <span id='mrs'> ฅ^•ﻌ•^ฅ </span>"
 
     // about me
     about_me = document.getElementById("about-me")
@@ -224,7 +224,7 @@ function toggle_spanish(){
     know_me = document.getElementById("know-me")
     know_me.innerHTML = "¡conózcame!"
     know_p1 = document.getElementById("know-p1")
-    know_p1.innerHTML = "Recientemente he terminado una licenciatura en Informática en la Universidad de Minnesota, con la aspiración de convertirme en un desarrollador competente, capaz y entusiasta de trabajar tanto en el front-end como en el back-end de las aplicaciones."
+    know_p1.innerHTML = "Recientemente he terminado una licenciatura en Informática en la Universidad de Minnesota, trabajo como ingeniero de software graduado en rhize, capaz y entusiasta de trabajar tanto en el front-end como en el back-end de las aplicaciones."
     know_p2 = document.getElementById("know-p2")
     know_p2.innerHTML = "Gracias a mi trayectoria académica y a mi implicación práctica en el desarrollo de software, he adquirido un sólido conjunto de habilidades y un profundo conocimiento de los entresijos que implica la creación de soluciones funcionales e innovadoras. Esta combinación de conocimientos teóricos y aplicación en el mundo real me ha dotado de la adaptabilidad, la capacidad de resolución de problemas y la competencia técnica necesarias para desempeñar con éxito funciones de desarrollo de software."
     know_p3 = document.getElementById("know-p3")
